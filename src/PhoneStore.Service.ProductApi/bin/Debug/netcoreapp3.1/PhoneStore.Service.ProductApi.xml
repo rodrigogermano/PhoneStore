@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PhoneStore.Service.ProductApi</name>
+    </assembly>
+    <members>
+        <member name="T:Productsbuf.ProductReflection">
+            <summary>Holder for reflection information generated from Protos/product.proto</summary>
+        </member>
+        <member name="P:Productsbuf.ProductReflection.Descriptor">
+            <summary>File descriptor for Protos/product.proto</summary>
+        </member>
+        <member name="F:Productsbuf.ProductsReply.ProductsFieldNumber">
+            <summary>Field number for the "Products" field.</summary>
+        </member>
+        <member name="F:Productsbuf.ProductBuf.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="F:Productsbuf.ProductBuf.DisplayNameFieldNumber">
+            <summary>Field number for the "DisplayName" field.</summary>
+        </member>
+        <member name="F:Productsbuf.ProductBuf.DescriptionFieldNumber">
+            <summary>Field number for the "Description" field.</summary>
+        </member>
+        <member name="F:Productsbuf.ProductBuf.PriceFieldNumber">
+            <summary>Field number for the "Price" field.</summary>
+        </member>
+        <member name="F:Productsbuf.ProductBuf.PhotoFieldNumber">
+            <summary>Field number for the "Photo" field.</summary>
+        </member>
+        <member name="F:Productsbuf.ProductBuf.LengthFieldNumber">
+            <summary>Field number for the "Length" field.</summary>
+        </member>
+        <member name="F:Productsbuf.ProductBuf.WidthFieldNumber">
+            <summary>Field number for the "Width" field.</summary>
+        </member>
+        <member name="F:Productsbuf.ProductBuf.DepthFieldNumber">
+            <summary>Field number for the "Depth" field.</summary>
+        </member>
+        <member name="F:Productsbuf.DeleteProductBuf.IdFieldNumber">
+            <summary>Field number for the "Id" field.</summary>
+        </member>
+        <member name="P:Productsbuf.ProductsBuf.Descriptor">
+            <summary>Service descriptor</summary>
+        </member>
+        <member name="T:Productsbuf.ProductsBuf.ProductsBufClient">
+            <summary>Client for ProductsBuf</summary>
+        </member>
+        <member name="M:Productsbuf.ProductsBuf.ProductsBufClient.#ctor(Grpc.Core.ChannelBase)">
+            <summary>Creates a new client for ProductsBuf</summary>
+            <param name="channel">The channel to use to make remote calls.</param>
+        </member>
+        <member name="M:Productsbuf.ProductsBuf.ProductsBufClient.#ctor(Grpc.Core.CallInvoker)">
+            <summary>Creates a new client for ProductsBuf that uses a custom <c>CallInvoker</c>.</summary>
+            <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+        </member>
+        <member name="M:Productsbuf.ProductsBuf.ProductsBufClient.#ctor">
+            <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+        </member>
+        <member name="M:Productsbuf.ProductsBuf.ProductsBufClient.#ctor(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Protected constructor to allow creation of configured clients.</summary>
+            <param name="configuration">The client configuration.</param>
+        </member>
+        <member name="M:Productsbuf.ProductsBuf.ProductsBufClient.NewInstance(Grpc.Core.ClientBase.ClientBaseConfiguration)">
+            <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+        </member>
+    </members>
+</doc>

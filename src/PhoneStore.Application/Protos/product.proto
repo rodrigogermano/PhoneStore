@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "PhoneStore.Application.Protos";
+
+package productsbuf;
+
+service ProductsBuf {  
+  rpc AddProduct (ProductBuf) returns (google.protobuf.Empty);
+  rpc UpdateProduct (ProductBuf) returns (google.protobuf.Empty);
+  rpc GetAllProducts (google.protobuf.Empty) returns (ProductsReply);
+  rpc DeleteProduct (DeleteProductBuf) returns (google.protobuf.Empty);
+}
+
+message ProductsReply {
+    repeated ProductBuf Products = 1;
+}
+
+message DeleteProductBuf {
+    string  Id =1;    
+}
+
+message ProductBuf {
+    string  Id =1;
+    string DisplayName=2;
+    string Description=3;
+    int64  Price=4;    
+    string Photo = 5;
+    int64  Length=6;
+    int64  Width=7;
+    int64  Depth=8;
+}
+
+

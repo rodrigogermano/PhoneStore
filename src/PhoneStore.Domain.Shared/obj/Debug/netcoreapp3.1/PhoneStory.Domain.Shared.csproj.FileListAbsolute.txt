@@ -1,0 +1,4 @@
+C:\Infnet\dotnet\PhoneStory\src\PhoneStory.Domain.Shared\obj\Debug\netcoreapp3.1\PhoneStory.Domain.Shared.csprojAssemblyReference.cache
+C:\Infnet\dotnet\PhoneStory\src\PhoneStory.Domain.Shared\obj\Debug\netcoreapp3.1\PhoneStory.Domain.Shared.AssemblyInfoInputs.cache
+C:\Infnet\dotnet\PhoneStory\src\PhoneStory.Domain.Shared\obj\Debug\netcoreapp3.1\PhoneStory.Domain.Shared.AssemblyInfo.cs
+C:\Infnet\dotnet\PhoneStory\src\PhoneStory.Domain.Shared\obj\Debug\netcoreapp3.1\PhoneStory.Domain.Shared.csproj.CoreCompileInputs.cache

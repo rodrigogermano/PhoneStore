@@ -1,0 +1,18 @@
+<div class="row row-cols-1 row-cols-md-3 mt-4">
+    <div class="col mb-3" *ngFor='let product of (Products | async)?.products'>
+        <div class="card h-100">            
+            <img [src]="'https://apmidasstorage.blob.core.windows.net/store/' + product.photo"
+                class="rounded mx-auto d-block">
+            <div class="card-body">
+                <h5 class="card-title">{{product.displayName}}</h5>
+                <p class="card-text">{{product.description}}</p>
+                <p class="card-text">{{product.price | currency:'BRL'}}</p>
+                <!-- <button type="button" class="btn btn-outline-success btn-lg btn-block">
+                    <i class="material-icons md-18">
+                        add_shopping_cart
+                    </i> Adicionar ao carrinho
+                </button> -->
+            </div>
+        </div>
+    </div>    
+</div>

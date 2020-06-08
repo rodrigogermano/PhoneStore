@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Service", "1 - Service", "{6FAC773F-6288-4F32-8D44-4AF598F88045}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{D6C8EC77-EE9D-4EE4-8FB2-BA74D4A35562}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{7C1159F4-5FC9-4CCE-A70E-C3CAD65946E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{39765A33-EB3C-4908-BB29-9E48DB798836}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneStore.Domain", "src\PhoneStore.Domain\PhoneStore.Domain.csproj", "{D2896A75-6FAC-44AD-BE2E-2580A5C84F96}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneStore.Domain.Shared", "src\PhoneStore.Domain.Shared\PhoneStore.Domain.Shared.csproj", "{8751AEA7-AA2C-430A-AD3F-4C149AEAD7B0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneStore.Infra.DataAccess", "src\PhoneStore.Infra.DataAccess\PhoneStore.Infra.DataAccess.csproj", "{757220C7-F4B3-4FFD-BC22-28B35888805F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneStore.Application", "src\PhoneStore.Application\PhoneStore.Application.csproj", "{5406FC41-6C1F-4E26-AC69-C89F45D94F4C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneStore.Service.ProductApi", "src\PhoneStore.Service.ProductApi\PhoneStore.Service.ProductApi.csproj", "{FB0FD250-E784-4C72-A96C-B6FB4C63A6A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneStore.Infra.Messaging", "src\PhoneStore.Infra.Messaging\PhoneStore.Infra.Messaging.csproj", "{97053423-11EF-4007-8185-415A90D9AD7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneStore.Service.ProductWorker", "src\PhoneStore.Service.ProductWorker\PhoneStore.Service.ProductWorker.csproj", "{762A3E61-CA81-4DFF-9713-822F7A5814C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneStore.Infra.SendMail", "src\PhoneStore.Infra.SendMail\PhoneStore.Infra.SendMail.csproj", "{DF3F26A7-43D2-4E0E-925C-E35E17C03C1C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PhoneStore.Infra.BlobStorage", "src\PhoneStore.Infra.BlobStorage\PhoneStore.Infra.BlobStorage.csproj", "{5E54B6A2-8DA4-42CF-B385-22E466C9C43A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2896A75-6FAC-44AD-BE2E-2580A5C84F96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2896A75-6FAC-44AD-BE2E-2580A5C84F96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2896A75-6FAC-44AD-BE2E-2580A5C84F96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2896A75-6FAC-44AD-BE2E-2580A5C84F96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8751AEA7-AA2C-430A-AD3F-4C149AEAD7B0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8751AEA7-AA2C-430A-AD3F-4C149AEAD7B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8751AEA7-AA2C-430A-AD3F-4C149AEAD7B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8751AEA7-AA2C-430A-AD3F-4C149AEAD7B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{757220C7-F4B3-4FFD-BC22-28B35888805F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{757220C7-F4B3-4FFD-BC22-28B35888805F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{757220C7-F4B3-4FFD-BC22-28B35888805F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{757220C7-F4B3-4FFD-BC22-28B35888805F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5406FC41-6C1F-4E26-AC69-C89F45D94F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5406FC41-6C1F-4E26-AC69-C89F45D94F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5406FC41-6C1F-4E26-AC69-C89F45D94F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5406FC41-6C1F-4E26-AC69-C89F45D94F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB0FD250-E784-4C72-A96C-B6FB4C63A6A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0FD250-E784-4C72-A96C-B6FB4C63A6A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB0FD250-E784-4C72-A96C-B6FB4C63A6A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB0FD250-E784-4C72-A96C-B6FB4C63A6A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97053423-11EF-4007-8185-415A90D9AD7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97053423-11EF-4007-8185-415A90D9AD7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97053423-11EF-4007-8185-415A90D9AD7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97053423-11EF-4007-8185-415A90D9AD7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762A3E61-CA81-4DFF-9713-822F7A5814C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762A3E61-CA81-4DFF-9713-822F7A5814C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762A3E61-CA81-4DFF-9713-822F7A5814C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762A3E61-CA81-4DFF-9713-822F7A5814C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF3F26A7-43D2-4E0E-925C-E35E17C03C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF3F26A7-43D2-4E0E-925C-E35E17C03C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF3F26A7-43D2-4E0E-925C-E35E17C03C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF3F26A7-43D2-4E0E-925C-E35E17C03C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E54B6A2-8DA4-42CF-B385-22E466C9C43A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E54B6A2-8DA4-42CF-B385-22E466C9C43A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E54B6A2-8DA4-42CF-B385-22E466C9C43A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E54B6A2-8DA4-42CF-B385-22E466C9C43A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D2896A75-6FAC-44AD-BE2E-2580A5C84F96} = {7C1159F4-5FC9-4CCE-A70E-C3CAD65946E6}
+		{8751AEA7-AA2C-430A-AD3F-4C149AEAD7B0} = {7C1159F4-5FC9-4CCE-A70E-C3CAD65946E6}
+		{757220C7-F4B3-4FFD-BC22-28B35888805F} = {39765A33-EB3C-4908-BB29-9E48DB798836}
+		{5406FC41-6C1F-4E26-AC69-C89F45D94F4C} = {D6C8EC77-EE9D-4EE4-8FB2-BA74D4A35562}
+		{FB0FD250-E784-4C72-A96C-B6FB4C63A6A1} = {6FAC773F-6288-4F32-8D44-4AF598F88045}
+		{97053423-11EF-4007-8185-415A90D9AD7A} = {39765A33-EB3C-4908-BB29-9E48DB798836}
+		{762A3E61-CA81-4DFF-9713-822F7A5814C4} = {6FAC773F-6288-4F32-8D44-4AF598F88045}
+		{DF3F26A7-43D2-4E0E-925C-E35E17C03C1C} = {39765A33-EB3C-4908-BB29-9E48DB798836}
+		{5E54B6A2-8DA4-42CF-B385-22E466C9C43A} = {39765A33-EB3C-4908-BB29-9E48DB798836}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {70DC4922-5201-49F1-A373-B62D8F4458BE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,71 @@
+<!-- Button trigger modal -->
+<button type="button" (click)="openModal(template)" class="btn btn-outline-success btn-lg mt-2" data-toggle="modal"
+  data-target="#exampleModal">
+  <i class="material-icons md-18">
+    add
+  </i> Adicionar produto
+</button>
+
+<ng-template #template>
+  <div class="modal-header">
+    <input type="text" class="form-control modal-title pull-left remove-border" placeholder="Nome do produto"
+      [(ngModel)]="Product.displayName" />
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-3">
+        <label for="inputGroupFile01" *ngIf="Product.photo == null">
+          <svg class="bd-placeholder-img rounded float-left" width="100" height="150" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 200x200">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#868e96"></rect>
+            <text x="40%" y="50%" fill="#dee2e6" dy=".3em" class="material-icons">
+              add_a_photo
+            </text>
+          </svg>
+        </label>
+        <img width="100" height="150" [src]="'data:image/png;base64,' + Product.photo" *ngIf="Product.photo != null"
+          class="rounded float-left">
+        <input type="file" id="inputGroupFile01" class="custom-file-input" (change)="onChangeAnexarDocumento($event)"
+          placeholder="Selecionar foto" />
+      </div>
+      <div class="col-9">
+        <div class="form-group">
+          <input type="text" class="form-control modal-title remove-border" placeholder="Descrição"
+            [(ngModel)]="Product.description" />
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control modal-title remove-border" placeholder="Preço"
+            [(ngModel)]="Product.price" />
+        </div>
+      </div>
+    </div> 
+    <div class="row">
+      <div class="col-3">
+        <div class="form-group">
+          <input type="number" class="form-control modal-title remove-border" placeholder="Altura"
+            [(ngModel)]="Product.length" />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="form-group">
+          <input type="number" class="form-control modal-title remove-border" placeholder="Largura"
+            [(ngModel)]="Product.width" />
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="form-group">
+          <input type="number" class="form-control modal-title remove-border" placeholder="Profundidade"
+            [(ngModel)]="Product.depth" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="modalRef.hide()">Sair</button>
+    <button type="button" class="btn btn-success" (click)="Create()">Salvar</button>
+  </div>
+</ng-template>

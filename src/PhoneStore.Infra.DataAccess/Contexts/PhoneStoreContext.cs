@@ -19,9 +19,7 @@ namespace PhoneStore.Infra.DataAccess.Contexts
         public DbSet<Product> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
-        {
-            //builder.Ignore<Notification>();
-            
+        {                        
             builder.ApplyConfiguration(new ProductMap());            
             builder.ApplyConfiguration(new CellPhoneMap());
             builder.ApplyConfiguration(new AccessoryMap());

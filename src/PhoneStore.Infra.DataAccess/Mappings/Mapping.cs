@@ -49,39 +49,14 @@ namespace PhoneStore.Infra.DataAccess.Mappings
     public class CellPhoneMap : IEntityTypeConfiguration<CellPhone>
     {
         public void Configure(EntityTypeBuilder<CellPhone> builder)
-        {
-            //builder.OwnsOne(x => x.Dimensions, y =>
-            //{
-            //    y.Property(p => p.Length)
-            //     .HasColumnName("Length")
-            //     .HasDefaultValue(0)
-            //    .HasColumnType("decimal(15, 2)");
-
-            //    y.Property(p => p.Width)
-            //     .HasColumnName("Width")
-            //     .HasDefaultValue(0)
-            //    .HasColumnType("decimal(15, 2)");
-
-            //    y.Property(p => p.Depth)
-            //     .HasColumnName("Depth")
-            //     .HasDefaultValue(0)
-            //    .HasColumnType("decimal(15, 2)");
-            //});
+        {           
         }
     }
 
     public class AccessoryMap : IEntityTypeConfiguration<Accessory>
     {
         public void Configure(EntityTypeBuilder<Accessory> builder)
-        {
-            //builder.Property(c => c.Dimensions.Length)
-            //    .HasColumnName("Length");
-
-            //builder.Property(c => c.Dimensions.Width)
-            //    .HasColumnName("Width");
-
-            //builder.Property(c => c.Dimensions.Depth)
-            //    .HasColumnName("Depth");
+        {            
         }
     }
 }

@@ -49,8 +49,7 @@ namespace PhoneStore.Service.ProductWorker
                 {                    
                     options.UseSqlServer(Configuration.GetConnectionString("DbContext"));
                 });
-                                
-                //services.AddScoped<PhoneStoreContext>();
+                
                 services.AddSingleton<IUow, Uow>();
                 services.AddSingleton<IProductService, ProductService>();
                 services.AddSingleton<IProductCommandHandler, ProductCommandHandler>();
@@ -71,14 +70,12 @@ namespace PhoneStore.Service.ProductWorker
         }
 
         private static void ConfigureServices(IServiceCollection serviceCollection)
-        {
-            // Build configuration
+        {            
             Configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetParent(AppContext.BaseDirectory).FullName)
                 .AddJsonFile("appsettings.json", false)
                 .Build();
-
-            // Add access to generic IConfigurationRoot
+                     
             serviceCollection.AddSingleton<IConfigurationRoot>(Configuration);
         }
     }
